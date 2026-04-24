@@ -629,6 +629,8 @@ document.addEventListener("DOMContentLoaded", () => {
           btn.title = originalTitle;
           btn.classList.remove("share-copy-success");
         }, 2000);
+      }).catch(() => {
+        showMessage("Could not copy link. Please copy the address from your browser's address bar.", "error");
       });
     });
 
